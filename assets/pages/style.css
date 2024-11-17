@@ -1,0 +1,160 @@
+@font-face {
+    font-family: 'Intro';
+    src: url('/assets/fonts/Intro/IntroDemo-BlackCAPS.otf') format('opentype');
+}
+
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 10vh;
+}
+
+.header__logo {
+    margin-left: 10vw;
+    margin-top: 5vh;
+}
+
+.header__button {
+    align-self: center;
+    margin-right: 10vw;
+    margin-top: 5vh;
+    border-radius: 100px;
+    background: rgb(82, 34, 208);
+    border: none;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 16px;
+    padding-right: 16px;
+    color: white;
+    text-transform: uppercase;
+    font-family: Intro ;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+h1 {
+    font-family: Intro ;
+    font-size: 60px;
+    font-weight: 400;
+    margin-left: 10vw;
+    margin-top: 10vh;
+    max-width: 100%;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    margin-bottom: 10vh;
+}
+
+.cards__item {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10%;
+    justify-content: center;
+}
+
+.cards__item__image {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+.cards__item__title {
+    margin: 1%;
+    font-family: Intro;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.cards__item__description {
+    margin: 1%;
+    font-family: 'Roboto Slab';
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.cards__subcscription-block {
+background-color: rgb(236, 97, 91);
+color: white;
+padding-top: 10%;
+}
+
+.cards__item__subscription-title {
+    margin: 1%;
+    font-family: Intro ;
+    font-size: 30px;
+    font-weight: 400;
+    padding-left: 5%;
+}
+
+.email {
+    padding: 5%;
+    font-family: 'Roboto Slab';
+    font-size: 20px;
+    font-weight: 300;
+
+}
+
+.placeholder {
+    height: 50px;
+    padding-left: 10px;
+    border: none;
+}
+
+.subscribe-button {
+    margin-left: 5%;
+    margin-bottom: 15%;
+    border-radius: 100px;
+    background: rgb(82, 34, 208);
+    border: none;
+    padding-top: 11px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    color: rgb(255, 255, 255);
+    font-family: Intro ;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+nav { 
+    margin-left: 10vw;
+}
+
+.site-nav-bar {
+    display: flex;
+    flex-direction: row;
+    gap: 3vw;
+    padding-left: 0;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+.site-nav-bar__item {
+    list-style-type: none;
+    font-family: 'Roboto Slab';
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.site-nav-bar__item>* {
+    text-decoration: none;
+    margin-bottom: 0;
+}
+
+a:visited {
+    color: black;
+}
